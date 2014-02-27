@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81086089599CCA379E56C396 /* MOPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086CC71AD55B89D213AD9C /* MOPropertyDescriptor.m */; };
+		81086228E8763D58ED6EA61D /* MOPropertyAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086516DBCC2E56860E9C59 /* MOPropertyAnalyzer.m */; };
+		8108648CEFB9580A8000ACFF /* MOPropertyAnalyzerFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086C16A033CBD0532577B2 /* MOPropertyAnalyzerFixture.m */; };
+		810866AE178337516A66A0B5 /* MOFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8108613650392B6646D70D18 /* MOFixture.m */; };
 		A12DCF7E18BFDAB10079294D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12DCF7D18BFDAB00079294D /* Foundation.framework */; };
 		A12DCF8018BFDAB10079294D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12DCF7F18BFDAB10079294D /* CoreGraphics.framework */; };
 		A12DCF8218BFDAB10079294D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12DCF8118BFDAB10079294D /* UIKit.framework */; };
@@ -32,6 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8108613650392B6646D70D18 /* MOFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOFixture.m; sourceTree = "<group>"; };
+		81086516DBCC2E56860E9C59 /* MOPropertyAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPropertyAnalyzer.m; sourceTree = "<group>"; };
+		81086C16A033CBD0532577B2 /* MOPropertyAnalyzerFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPropertyAnalyzerFixture.m; sourceTree = "<group>"; };
+		81086C2D3C8D0EE49BEE12F4 /* MOPropertyAnalyzerFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPropertyAnalyzerFixture.h; sourceTree = "<group>"; };
+		81086C3DB70C689D88D15275 /* MOFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOFixture.h; sourceTree = "<group>"; };
+		81086CC31EC54865E9F666F7 /* MOPropertyAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPropertyAnalyzer.h; sourceTree = "<group>"; };
+		81086CC71AD55B89D213AD9C /* MOPropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPropertyDescriptor.m; sourceTree = "<group>"; };
+		81086FC4A87D9C9F4FAD4520 /* MOPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPropertyDescriptor.h; sourceTree = "<group>"; };
 		A12DCF7A18BFDAB00079294D /* MOPropertyAnalyzerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOPropertyAnalyzerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12DCF7D18BFDAB00079294D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A12DCF7F18BFDAB10079294D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +86,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810862CA642153BD390DEFDC /* MOPropertyAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				81086CC71AD55B89D213AD9C /* MOPropertyDescriptor.m */,
+				81086516DBCC2E56860E9C59 /* MOPropertyAnalyzer.m */,
+				81086CC31EC54865E9F666F7 /* MOPropertyAnalyzer.h */,
+				81086FC4A87D9C9F4FAD4520 /* MOPropertyDescriptor.h */,
+			);
+			path = MOPropertyAnalyzer;
+			sourceTree = "<group>";
+		};
+		810867C0C159BE3D4845F48B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81086C2D3C8D0EE49BEE12F4 /* MOPropertyAnalyzerFixture.h */,
+				81086C16A033CBD0532577B2 /* MOPropertyAnalyzerFixture.m */,
+				8108613650392B6646D70D18 /* MOFixture.m */,
+				81086C3DB70C689D88D15275 /* MOFixture.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A12DCF7118BFDAB00079294D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +115,7 @@
 				A12DCF9C18BFDAB10079294D /* MOPropertyAnalyzerExampleTests */,
 				A12DCF7C18BFDAB00079294D /* Frameworks */,
 				A12DCF7B18BFDAB00079294D /* Products */,
+				810862CA642153BD390DEFDC /* MOPropertyAnalyzer */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +166,7 @@
 			children = (
 				A12DCFA218BFDAB10079294D /* MOPropertyAnalyzerExampleTests.m */,
 				A12DCF9D18BFDAB10079294D /* Supporting Files */,
+				810867C0C159BE3D4845F48B /* Helpers */,
 			);
 			path = MOPropertyAnalyzerExampleTests;
 			sourceTree = "<group>";
@@ -242,6 +278,8 @@
 			files = (
 				A12DCF8E18BFDAB10079294D /* MOAppDelegate.m in Sources */,
 				A12DCF8A18BFDAB10079294D /* main.m in Sources */,
+				81086089599CCA379E56C396 /* MOPropertyDescriptor.m in Sources */,
+				81086228E8763D58ED6EA61D /* MOPropertyAnalyzer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12DCFA318BFDAB10079294D /* MOPropertyAnalyzerExampleTests.m in Sources */,
+				810866AE178337516A66A0B5 /* MOFixture.m in Sources */,
+				8108648CEFB9580A8000ACFF /* MOPropertyAnalyzerFixture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
